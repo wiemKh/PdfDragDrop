@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+@*<img draggable="true" ondragstart="drag(event)"  src="~/img/pere.png" style="width: 66px;z-index:7000" />*@
+<img draggable="true" ondragstart="drag(event)" id="drag1" src="~/img/signaturee.png" width="66"/>
+
+@*<textarea draggable="true" ondragstart="drag(event)" cols="50" rows="2">Zone de texte!</textarea>*@
+
+@*<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+
+    </div>*@
+
+<div>
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    &nbsp; &nbsp;
+    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+</div>
+<canvas width="550" height="350" id="cvs" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+    @*<embed src="~/files/FOR-1568886484838.pdf" type="application/pdf" height="700px" width="500">*@
+
+</canvas>
+
+<button  onclick="deleteItEM()" >delete</button>
+
+
+<canvas width="550" height="350" id="cvs1" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+<canvas width="550" height="350" id="cvs2" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+
+<canvas width="550" height="350" id="cvs3" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+
+<canvas width="550" height="350" id="cvs4" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+
+<canvas width="550" height="350" id="cvs5" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+
+<canvas width="550" height="350" id="cvs6" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+
+
+<style>
+    #cvs {
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+</style>
+
+@section Scripts {
+    <script src="~/lib/pdf.js/pdf.min.js"></script>
+    <script src="~/lib/pdf.js/pdf.worker.min.js"></script>
+    <script src="~/scripts/DragAndDropScript.js"></script>
+
+}

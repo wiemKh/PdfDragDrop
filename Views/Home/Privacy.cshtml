@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+
+
+<div>
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    &nbsp; &nbsp;
+    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+</div>
+<p>Use this page to detail your site's privacy policy.</p>
+<div id="draggable" class="ui-widget-content">
+    <p>Drag me arounsd</p>
+</div>
+
+<div id="draggable1" class="ui-widget-content">
+    <p>Signature</p>
+</div>
+<p></p>
+
+@*<div id="#container">
+
+        <embed   id="droppable" src="~/files/FOR-1568886484838.pdf" type="application/pdf" height="700px" width="500">
+    </div>*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="the-svg">
+
+
+
+
+</div>
+
+
+<style>
+    #draggable {
+        width: 100px;
+        height: 100px;
+        padding: 0.5em;
+        float: left;
+        margin: 10px 10px 10px 0;
+    }
+
+    #draggable1 {
+        width: 100px;
+        height: 100px;
+        padding: 0.5em;
+        float: left;
+        margin: 10px 10px 10px 0;
+    }
+
+    #container {
+        position: relative;
+    }
+</style>
+
+
+
+@section Scripts {
+
+
+
+    <script src="~/lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="~/lib/pdf.js/pdf.min.js"></script>
+    <script src="~/lib/pdf.js/pdf.worker.min.js"></script>
+
+    <script src="~/scripts/pdfWithSvgExp.js"></script>
+
+
+
+
+}
