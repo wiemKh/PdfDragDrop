@@ -12,7 +12,6 @@ C:\Users\ETC\Source\Repos\TestDragDropPdf\bin\Debug\netcoreapp3.0\TestDragDropPd
 C:\Users\ETC\Source\Repos\TestDragDropPdf\obj\Debug\netcoreapp3.0\TestDragDropPdf.csprojAssemblyReference.cache
 C:\Users\ETC\Source\Repos\TestDragDropPdf\obj\Debug\netcoreapp3.0\staticwebassets\TestDragDropPdf.StaticWebAssets.Manifest.cache
 C:\Users\ETC\Source\Repos\TestDragDropPdf\obj\Debug\netcoreapp3.0\staticwebassets\TestDragDropPdf.StaticWebAssets.xml
-C:\Users\ETC\Source\Repos\TestDragDropPdf\obj\Debug\netcoreapp3.0\TestDragDropPdf.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ETC\Source\Repos\TestDragDropPdf\obj\Debug\netcoreapp3.0\TestDragDropPdf.RazorAssemblyInfo.cache
 C:\Users\ETC\Source\Repos\TestDragDropPdf\obj\Debug\netcoreapp3.0\TestDragDropPdf.RazorAssemblyInfo.cs
 C:\Users\ETC\Source\Repos\TestDragDropPdf\obj\Debug\netcoreapp3.0\TestDragDropPdf.AssemblyInfoInputs.cache
@@ -34,3 +33,6 @@ C:\Users\ETC\Source\Repos\TestDragDropPdf\obj\Debug\netcoreapp3.0\TestDragDropPd
 C:\Users\ETC\Source\Repos\TestDragDropPdf\obj\Debug\netcoreapp3.0\TestDragDropPdf.pdb
 C:\Users\ETC\Source\Repos\TestDragDropPdf\obj\Debug\netcoreapp3.0\TestDragDropPdf.csproj.CopyComplete
 C:\Users\ETC\Source\Repos\TestDragDropPdf\bin\Debug\netcoreapp3.0\libman.json
+C:\Users\ETC\Source\Repos\TestDragDropPdf\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\ETC\Source\Repos\TestDragDropPdf\bin\Debug\netcoreapp3.0\Microsoft.WindowsAzure.Storage.dll
+C:\Users\ETC\Source\Repos\TestDragDropPdf\obj\Debug\netcoreapp3.0\TestDragDropPdf.MvcApplicationPartsAssemblyInfo.cache

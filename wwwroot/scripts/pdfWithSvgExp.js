@@ -59,6 +59,25 @@ function queueRenderPage(num) {
     }
 }
 
+
+
+
+
+function testDisplayElements(element) {
+    var className =element.attr('class');
+
+    var n = className.search(pageNum);
+    var isDropped = className.search('item');
+
+    if (n !== -1) {
+        element.show();
+    } else if (n === -1 && isDropped !== -1) {
+        element.hide();
+    }
+}
+
+
+
 /**
  * Displays previous page.
  */
@@ -67,7 +86,34 @@ function onPrevPage() {
         return;
     }
     pageNum--;
+
+    testDisplayElements($('#draggable1'));
+    testDisplayElements($('#draggable'));
+
+    //var className = $('#draggable1').attr('class');
+
+    //var n = className.search(pageNum);
+    //var isDropped = className.search('item');
+
+    //if (n !== -1) {
+    //    $("#draggable1").show();
+    //} else if (n === -1 && isDropped !== -1) {
+    //    $("#draggable1").hide();
+    //}
+
+   
+    //if (pageNum === 1) {
+    //    $("#draggable1").show();
+    //    $("#draggable").hide();
+
+
+    //} else if (pageNum === 2) {
+    //    $("#draggable1").hide();
+    //    $("#draggable").show();
+    //}
+
     queueRenderPage(pageNum);
+
     //var dataURL = localStorage.getItem('cvs');
     //var ctx = document.getElementById('cvs').getContext('2d');
 
@@ -88,6 +134,49 @@ function onNextPage() {
         return;
     }
     pageNum++;
+
+    testDisplayElements($('#draggable1'));
+    testDisplayElements($('#draggable'));
+
+
+    //var className = $('#draggable1').attr('class');
+
+    //var n = className.search(pageNum);
+    //var isDropped = className.search('item');
+    //if (n !== -1) {
+    //    $("#draggable1").show();
+    //} else if(n=== -1 && isDropped !== -1){
+    //    $("#draggable1").hide();
+    //}
+
+
+    //if ($("#draggable1").hasClass("jjj") + pageNum) {
+
+    //    alert('true');
+
+    //}
+
+
+
+
+//    if (pageNum === 1) {
+//        $("#draggable1").show();
+//        $("#draggable").hide();
+
+//    } else if (pageNum === 2) {
+
+//        $("#draggable").show();
+//        $("#draggable1").hide();
+
+
+//    }
+//else {
+//        $("#draggable1").hide();
+//        $("#draggable").hide();
+
+//    }
+
+
     queueRenderPage(pageNum);
 
 
@@ -165,7 +254,9 @@ PDFJS.getDocument(url).promise.then(function (pdfDoc_) {
 
 $(document).ready(() => {
 
-   $("#draggable1").draggable({ containment: "#the-svg" });
+    $("#draggable1").draggable({
+        containment: "#the-svg" // create "copy" with original properties, but not a true clone
+    });
     $("#draggable").draggable({ containment: "#the-svg" });
 
 
@@ -181,13 +272,12 @@ $(document).ready(() => {
             var offsetLeft = ($("#draggable").offset().left) - offsetLeftSVG;
             var offsetTop = ($("#draggable").offset().top) - offsetTopSVG;
 
+            ui.draggable.addClass(function () {
+                return "item-" + pageNum;
+            });
         
-
-            alert("Current position of the box is: (left: " + offsetLeft + ", top: " + offsetTop + ")");
-            $(this)
-                .addClass("ui-state-highlight")
-                .find("p")
-                .html("Dropped!");
+            alert("Current position of the box is: (left: " + offsetLeft + ", top: " + offsetTop + ")" + pageNum);
+           
         }
     });
 
