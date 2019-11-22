@@ -9,7 +9,7 @@ namespace TestDragDropPdf.Services
     public class BlobStorage
     {
         public string ConnectionString =
-            "DefaultEndpointsProtocol=https;AccountName=increditing;AccountKey=mraciuyjImUB+roT7qLA7oda/ARu6uhHZsSStWkDjOPD9YE6nOv7q/DKAugiOEvCL1Ex8Pi78T2if+Kajw+LiA==;EndpointSuffix=core.windows.net";
+            "";
 
         private CloudStorageAccount Account { get; }
         public CloudBlobClient ServiceClient { get; }
